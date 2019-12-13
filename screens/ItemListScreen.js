@@ -52,9 +52,6 @@ ItemListScreen.navigationOptions = nagivationData => {
     </HeaderButtons> 
   )};
 };
-
 const styles = StyleSheet.create({
-
 });
-
 export default ItemListScreen;

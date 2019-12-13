@@ -11,9 +11,9 @@ const MoveToBrowsing = () => {
   return (
     <View style={styles.screen}>
       <Text style={styles.header}>Sappolut</Text>
-      <Text style={styles.content}>Tallenna haluamasi juomat ja voit selata niitä myöhemmin!</Text>
+      <Text style={styles.content}>Save your favorite drinks to the application and you can view them later!</Text>
         <View style={styles.button}>
-          <Button title='Browse Items' onPress={MoveToBrowsing} />
+          <Button title='Browse Drinks' onPress={MoveToBrowsing} />
         </View>
     </View>
     

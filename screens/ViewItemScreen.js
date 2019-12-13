@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import Colors from '../constants/Colors';
 import { useSelector } from 'react-redux';
@@ -8,7 +8,8 @@ const ViewItemsScreen = props => {
   
   const drinkId = props.navigation.getParam('drinkId');
   const viewItem = useSelector(state => state.drinks.drinks.find(drink => drink.id === drinkId));
-
+console.log(drinkId);
+console.log(viewItem);
   
   return (
     <ScrollView contentContainerStyle={{ alignItems: 'center'}}>
@@ -24,7 +25,7 @@ const ViewItemsScreen = props => {
 
 ViewItemsScreen.navigationOptions = navigationData => {
   return {
-    headerTitle: navigationData.navigation.getParam('itemTitle')
+    headerTitle: navigationData.navigation.getParam('drinkTitle')
   };
 };
 
